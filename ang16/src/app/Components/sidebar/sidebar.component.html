@@ -1,0 +1,20 @@
+<mat-drawer-container class="sidebar-container">
+    <mat-drawer #drawer class="sidebar" mode="side">
+      <!-- Sidebar content -->
+      <p>Sidebar Content</p>
+    </mat-drawer>
+    <div class="content">
+      <button mat-raised-button (click)="toggleSidebar()">
+        Toggle Sidebar
+      </button>
+      <div class="main-content">
+        <app-content> </app-content>
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </mat-drawer-container>
+  
+
+
+
+    
